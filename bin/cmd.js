@@ -66,9 +66,10 @@ program
   .action(function(cmd, options) {
     console.log("netlify-lambda: Building functions")
 
-    const { config: userWebpackConfig, babelrc: useBabelrc = true } = program
+    // const { config: userWebpackConfig, babelrc: useBabelrc = true } = program
     build
-      .run(cmd, { userWebpackConfig, useBabelrc })
+      .run(cmd)
+      // .run(cmd, { userWebpackConfig, useBabelrc })
       .then(function(stats) {
         console.log(stats.toString({ color: true }))
       })

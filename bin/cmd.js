@@ -61,22 +61,22 @@ const stringBooleanToBoolean = (val) => {
 //   })
 
 program
-  .command("build <dir>")
+  .command("build")
+  // .command("build <dir>")
   .description("build functions")
   .action(function(cmd, options) {
     console.log("netlify-lambda: Building functions")
 
     // const { config: userWebpackConfig, babelrc: useBabelrc = true } = program
-    build
-      .run(cmd)
-      // .run(cmd, { userWebpackConfig, useBabelrc })
-      .then(function(stats) {
-        console.log(stats.toString({ color: true }))
-      })
-      .catch(function(err) {
-        console.error(err)
-        process.exit(1)
-      })
+    build.run(cmd)
+    // .run(cmd, { userWebpackConfig, useBabelrc })
+    // .then(function(stats) {
+    //   console.log(stats.toString({ color: true }))
+    // })
+    // .catch(function(err) {
+    //   console.error(err)
+    //   process.exit(1)
+    // })
   })
 
 // error on unknown commands

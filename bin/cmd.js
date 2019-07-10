@@ -65,7 +65,7 @@ program
   // .command("build <dir>")
   .description("build functions")
   .action(function(cmd, options) {
-    console.log("netlify-lambda: Building functions")
+    console.log("netlify-nextjs: Building functions")
 
     // const { config: userWebpackConfig, babelrc: useBabelrc = true } = program
     build.run(cmd)

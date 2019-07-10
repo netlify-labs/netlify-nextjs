@@ -19,6 +19,7 @@
   },
   "files": [
     "lib/*.js",
+    "cache/*.js",
     "!lib/*.spec.js",
     "bin/*.js"
   ],

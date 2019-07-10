@@ -1,6 +1,6 @@
 {
   "name": "netlify-nextjs",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "bin/cmd.js",
   "bin": {
     "netlify-nextjs": "bin/cmd.js"
